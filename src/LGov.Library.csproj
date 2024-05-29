@@ -6,6 +6,22 @@
     <TargetFrameworks>net472;netstandard2.0;net6.0;net8.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>LGov.Library</Title>
+    <PackageDescription>Local Government Function Library</PackageDescription>
+    <Version>0.1.1</Version>
+    <Authors>S Ellwood</Authors>
+    <Description>
+        Local Goverment Function Library
+        Generic functions and models for use in UK Local Governemnt
+    </Description>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>
+        Initial Release
+    </PackageReleaseNotes>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <PackageTags>Local Government, Library</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>$(DefineConstants);NETCORE;NETSTANDARD2_0</DefineConstants>
@@ -20,6 +36,7 @@
     <Compile Remove="LGov.Library\**" />
     <EmbeddedResource Remove="LGov.Library\**" />
     <None Remove="LGov.Library\**" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
